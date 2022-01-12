@@ -1,0 +1,8 @@
+.icons{
+    width:80%;
+    max-width: 35px;
+}
+.icons:hover{
+    width:100%;
+    max-width: 35px;
+}
