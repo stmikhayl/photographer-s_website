@@ -19,14 +19,25 @@
 <style>
     ::-webkit-scrollbar { width: 0;
     }
+
+    @keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+ 
     html {
     scroll-behavior: smooth;
     align-items: center;
+    animation: fade-in .4s ease;
     }
  
     body{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         background-color: rgb(20, 18, 18);
         padding: 0px;
@@ -41,21 +52,20 @@
         align-items: center;
         height: 500px;
         width: 250px;
-        border-color: blueviolet;
+       /* border-color: blueviolet;
         border-width:2px;
-        border-style: solid;
+        border-style: solid;*/
         
     }
 
     #video  
         {
         display: flex;
-        flex-wrap: wrap;
         height: 500px;
         width: 250px;
-        border-color: blueviolet;
+       /* border-color: blueviolet;
         border-width:2px;
-        border-style: solid;
+        border-style: solid;*/
     }
     .videoplusdesc  
         {
@@ -64,9 +74,9 @@
         height: 500px;
         width: 250px;
  
-        border-color: blueviolet;
+        /*border-color: blueviolet;
         border-width:2px;
-        border-style: solid;
+        border-style: solid;*/
     }
     @media screen and (min-width: 0px){
         section {
@@ -75,14 +85,14 @@
             
         }
         #video {
-            width: 100vw;
-            height: 300vh;
+            width: 400vw;
+            height: 100vh;
         }
     }
     
-    .about_two_squares {
+    .about_three_squares {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         
@@ -97,18 +107,18 @@
          height: 100%;
          justify-content: center;
          align-items: center;
+         color: darkgoldenrod;
          
     }
     @media screen and (min-width: 50px){
-        .about_two_squares {
-            height: 50vh;
-            width: 75vh;
+        .about_three_squares {
+            height: 75vh;
+            width: 50vw;
          }
         .photo_square,
         .text_square {
-            border-color: blueviolet;
             border-width:0px;
-            border-style: solid;
+           /* border-style: solid;*/
         }
     }
     header{
@@ -116,10 +126,11 @@
         display: flex;
         align-items: center;
         justify-content:center;
+        
          
-        border-color: blueviolet;
+       /* border-color: blueviolet;
         border-width: 2px;
-        border-style: solid;
+        border-style: solid;*/
     }
 
     nav{
@@ -127,21 +138,21 @@
         align-items: center;
         justify-content:center;
         gap: 1em;
-        border-color: blueviolet;
+        /*border-color: blueviolet;
         border-width: 2px;
-        border-style: solid;
+        border-style: solid;*/
     }
 
     .bckg-img {
   
         text-align: center;
         background-image: url("./images/hi_i_sky-0002.jpg");
-        background-repeat:no-repeat;
-        background-attachment:fixed;
+        /*background-repeat:no-repeat;
+        background-attachment:fixed;*/
 }
     
 </style>
-
+<!--
 <header>
     <nav>
         <a href="#about">Главная</a>
@@ -150,14 +161,21 @@
     </nav>
 </header>
 
+
+-->
+
+
 <body class="bckg-img">
     <section id="about">
-        <div class="about_two_squares">
+        <div class="about_three_squares">
+            <div class="text_square">
+                VIDEOGRAPHY
+            </div>
             <div class="photo_square">
-                <img src="./images/icon_begin.gif" width="100%" >
+                <img src="./images/icon_begin.gif" width="100%">
             </div>
             <div class="text_square">
-                Текст
+                WITH ANASTASIA
             </div>
         </div>
         
@@ -181,18 +199,23 @@
          </video>
     </section>
     <section id="contact">
-         <div class="about_two_squares">
+         <div class="about_three_squares">
+            <div class="text_square">
+                Цены
+            </div>
             <div class="photo_square">
                 <img src="images/icon_end.gif" width="100%" >
             </div>
             <div class="text_square">
-                Цены
                 Контакты для связи
             </div>
         </div>
     </section>
+    
 </body>
-
+<footer>
+    Copyright
+</footer>
  
 
 
