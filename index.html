@@ -3,361 +3,50 @@
 
 <head>
     <link rel="icon" href="images/icon64.gif">
-    
     <link href="styles/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="Portfolio">
-   
     <title>Портфолио</title>
- 
 </head>
 
-
-
-<style>
-    ::-webkit-scrollbar { width: 0;
-    }
-
-    @keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
- 
-    html {
-    scroll-behavior: smooth;
-    align-items: center;
-    animation: fade-in .4s ease;
-    }
- 
-    body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgb(20, 18, 18);
-        padding: 0px;
-        margin: 0px;
-        
-    }
-
-    section
-        {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 500px;
-        width: 250px;
-       /* border-color: blueviolet;
-        border-width:2px;
-        border-style: solid;*/
-        
-    }
-
-    #video  
-        {
-        display: flex;
-        height: 500px;
-        width: 250px;
-       /* border-color: blueviolet;
-        border-width:2px;
-        border-style: solid;*/
-    }
-    
-        /*border-color: blueviolet;
-        border-width:2px;
-        border-style: solid;*/
-    }
-    @media screen and (max-width: 750px){
-        section {
-            width: 100vw;
-            height: 100vh;
-            
-        }
-        #video {
-            width: 100vw;
-            height: 400vh;
-            display: flex;
-            flex-direction: column;
-        }
-        .videoplusdesc  
-        {
-        display: flex;
-        flex-direction: column;
-       /* height: 500px;
-        width: 250px;*/
-        }
-    }
-    .about_three_squares {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 375px;
-        height: 563px;
-    }
- 
-    .photo_square,
-    .text_square {
-        display:flex;
-         width: 100%;
-         height: 100%;
-         justify-content: center;
-         align-items: center;
-         color: darkgoldenrod;
+<body class="page">
+    <header>
          
-    }
-    @media screen and (min-width: 750px){
-        section {
-            width: 100vw;
-            height: 100vh;
+    </header>
+
+    <main class="page-section">
+        <div class = "main-container">
+            <div class="main-text">
+                ANASTASIA
+            </div>
+            <div class="main-gif">
+                <img src="./images/icon_begin.gif" class="main-gif-original">
+            </div>
+            <div class="main-text">
+                VIDEOMAKER
+            </div>
+        </div>
+    </main>
+    <section class="page-section-video">
+        <div class = "video-container">
             
-        }
-        #videos {
-            width: 100vw;
-            height: 200vh;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-        video {
-            width: 80%;
-        }
-        .videoplusdesc  
-        {
-            height: 100vh;
-        /*height: 500px;
-        width: 250px;*/
-        }
-        
-
-    }
-  
-    @media screen and (max-width: 750px){
-        
-        .about_three_squares {
-        height: 75vh;
-        width: 50vw;
-        }
-        #videos {
-            width: 100vw;
-            height: 400vh;
-            display: flex;
-            flex-direction: column;
-        }
-        video {
-            height: 80%;
-        }
-        .videoplusdesc  
-        {
-            height: 100vh;
-        /*height: 500px;
-        width: 250px;*/
-        }
-        .photo_square,
-        .text_square {
-           /*  border-width:0px;
-           border-style: solid;*/
-        }
-        
-    }
-    header{
-        position: fixed;
-        display: flex;
-        align-items: center;
-        justify-content:center;
-        
-         
-       /* border-color: blueviolet;
-        border-width: 2px;
-        border-style: solid;*/
-    }
-
-    nav{
-         display: flex;
-        align-items: center;
-        justify-content:center;
-        gap: 1em;
-        /*border-color: blueviolet;
-        border-width: 2px;
-        border-style: solid;*/
-    }
-
-    .bckg-img {
-  
-        text-align: center;
-        background-image: url("./images/hi_i_sky-0002.jpg");
-        /*background-repeat:no-repeat;
-        background-attachment:fixed;*/
-}
+            <video class="video-body item-start item" width="360" height="540" controls="controls" poster="video/duel.jpg">
+                <source src="videos/hi_i_sky-0001.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+             </video>
+             <video class="video-body item-end item" width="360" height="540" controls="controls" poster="video/duel.jpg">
+                <source src="videos/hi_i_sky-0002.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+             </video>
+             <video class="video-body item-start item" width="360" height="540" controls="controls" poster="video/duel.jpg">
+                <source src="videos/hi_i_sky-0003.mp4"  class="item"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+             </video>
+             <video class="video-body item-end item" width="360" height="540" controls="controls" poster="video/duel.jpg">
+                <source src="videos/hi_i_sky-0004.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+             </video>
+ 
     
-</style>
-<!--
-<header>
-    <nav>
-        <a href="#about">Главная</a>
-        <a href="#video">Работы</a>
-        <a href="#contact">Цены и контакты</a>
-    </nav>
-</header>
 
-
--->
-
-
-<body class="bckg-img">
-    <section id="about">
-        <div class="about_three_squares">
-            <div class="text_square">
-                VIDEOGRAPHY
-            </div>
-            <div class="photo_square">
-                <img src="./images/icon_begin.gif" width="100%">
-            </div>
-            <div class="text_square">
-                WITH ANASTASIA
-            </div>
-        </div>
-        
-    </section>
-
-    <section id="videos">
-        <div class="videoplusdesc">
-            <video  width="360" height="540" controls="controls" poster="video/duel.jpg">
-                <source src="videos/hi_i_sky-0001.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-             </video>
-        </div>
-        <div class="videoplusdesc">
-            <video  width="360" height="540" controls="controls" poster="video/duel.jpg">
-                <source src="videos/hi_i_sky-0002.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-             </video>
-        </div>
-        <div class="videoplusdesc">
-            <video  width="360" height="540" controls="controls" poster="video/duel.jpg">
-                <source src="videos/hi_i_sky-0003.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-             </video>
-        </div>
-        <div class="videoplusdesc">
-            <video width="360" height="540" controls="controls" poster="video/duel.jpg">
-                <source src="videos/hi_i_sky-0004.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-             </video>
-        </div>
-        
-        
-        
-        
-    </section>
-    <section id="contact">
-         <div class="about_three_squares">
-            <div class="text_square">
-                Цены
-            </div>
-            <div class="photo_square">
-                <img src="images/icon_end.gif" width="100%" >
-            </div>
-            <div class="text_square">
-                Контакты для связи
-            </div>
-        </div>
-    </section>
-    
 </body>
-<footer>
-    Copyright
-</footer>
+
  
-
-
-
-<!-- 
-    
-    
-    
-    @media screen and (min-width: 0px){
-        section {
-            width: 100vw;
-            height: 100vh;
-        }
-        
-        
-        VisualViewport.width Только для чтения
-
-    Возвращает ширину визуального вью-порта в пикселях CSS.
-VisualViewport.height Только для чтения
-
-    Возвращает высоту визуального вью-порта в пикселях CSS.
-VisualViewport.scale Только для чтения
-
-    Возвращает масштабный коэффициент масштабирования прижима и угла,примененный к визуальному вью-порту.
-
-
-    Прослушивайте эти события с помощью addEventListener() или назначая прослушиватель событий соответствующему свойству oneventname этого интерфейса.
-
-resize
-
-    Вызывается при изменении размера визуального окна просмотра. Также доступно через свойство VisualViewport.onresize .
-scroll
-
-    Вызывается при прокрутке визуального окна просмотра. Также доступно через свойство VisualViewport.onscroll .
-
-
-Ширина/высота видимой части документа (ширина/высота области содержимого): document.documentElement.clientWidth/Height
-
-Ширина/высота всего документа со всей прокручиваемой областью страницы:
-
-    let scrollHeight = Math.max(
-      document.body.scrollHeight, document.documentElement.scrollHeight,
-      document.body.offsetHeight, document.documentElement.offsetHeight,
-      document.body.clientHeight, document.documentElement.clientHeight
-    );
-
-Прокрутка:
-
-    Прокрутку окна можно получить так: window.pageYOffset/pageXOffset.
-
-    Изменить текущую прокрутку:
-        window.scrollTo(pageX,pageY) – абсолютные координаты,
-        window.scrollBy(x,y) – прокрутка относительно текущего места,
-        elem.scrollIntoView(top) – прокрутить страницу так, чтобы сделать elem видимым (выровнять относительно верхней/нижней части окна).
-
-
-
-
-
-
-
-        
-
-    .div-1 {
-        float: left;
-        height: 500px;
-        width: 250px;
-        background-color: black;
-    }
-    .div-2 {
-        /* Ширина по умолчанию */
-        width: 500px; 
-        float: left;
-        height: 500px;
-        background-color: orange;
-    }
-
-    /* Когда ширина окна до 900 пикселей, ширина  div-2 будет 600px */
-    @media screen and (max-width: 900px){
-        .div-2 {
-            width: 600px;
-        }
-    }
-    /* Когда ширина окна от 1100 пикселей, ширина  div-2 будет 900px */
-    @media screen and (min-width: 1100px){
-        .div-2 {
-            width: 900px;
-        }
-    }
-</style>
-
--->
