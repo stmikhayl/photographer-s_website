@@ -105,8 +105,8 @@ ul {
  
 }
 
-@media screen and ((max-width: 512px) or (max-height: 750px)){
-   
+/*@media screen and ((max-width: 512px) or (max-height: 750px)){*/
+@media only screen and (max-width : 768px) {  
     .page-section{
         background-image:unset;
      }
@@ -134,7 +134,8 @@ ul {
      
     }
 
-@media screen and ((max-width: 512px) or (max-height: 750px)){
+/*@media screen and ((max-width: 512px) or (max-height: 750px)){*/
+@media only screen and (max-width : 768px) {
     .page-section-video{
         height: 400vh;
     }
