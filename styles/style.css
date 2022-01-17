@@ -17,9 +17,6 @@
     --contacts-font-size-big: 20px;
     --contacts-font-size-small: 20px;
 
-   /* --text-color: rgb(224, 228, 228);
-    --link-color: rgb(65, 199, 199);
-    --hover-color: rgb(254, 106, 106);*/
 }
 
 @keyframes fade-in {
@@ -149,5 +146,58 @@ ul {
 
 }
 
+@media only screen and (min-width: 1440px) {  
+    .video-section__video--big{
+        width: 23vw;
 
+    }
+
+    .video-section__video--align-start {
+        align-self: flex-start;
+    }
+    
+    .video-section__video--align-end {
+        align-self: flex-end;
+    }
+}
+    
+@media only screen and (max-width: 1440px){  
+
+    .video-section__container--medium{
+        justify-content:space-evenly;
+        height: fit-content;
+    }
+    .video-section__video--medium {
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {  
  
+.contacts__text--small{
+    font-family: var(--font-family-small);
+    font-size: var(--contacts-font-size-small);
+}
+
+.icon--small{
+    width: 50px;
+    padding: 3px;
+}
+
+.icon--small:hover{
+    width: 56px;
+    padding: 0px;  
+}
+.main-section__container--small{
+    margin-bottom: 56px;
+}
+
+.main-section__text--small{
+    color: var(--text-color-small);
+    font-size: var(--font-size-small);
+    font-family: var(--font-family-small);
+}
+
+.video-section__container--small{
+    justify-content: center;
+}
