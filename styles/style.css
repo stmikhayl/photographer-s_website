@@ -64,7 +64,7 @@ ul {
 }
 
 .main-section__background{
-    background-image: url("/images/hi_i_sky-0002.jpg");
+    background-image: url("./images/hi_i_sky-0002.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
