@@ -116,7 +116,7 @@
     
 }
 
-#main-section__animation{
+.main-section__animation{
     animation: fade-in .4s infinite;
 }
 
