@@ -4,6 +4,10 @@
 <head>
     <link rel="icon" href="images/icon64.gif">
     <link href="./styles/style.css" rel="stylesheet">
+    <link href="./styles/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,22 +15,24 @@
     <title>Портфолио</title>
 </head>
 
-<body class="page">
+<body class="wrapper page">
     <header class="contacts">
         <div class="contacts__icons">
-            <a href="https://www.instagram.com/hi_i_sky/" target = "_ blank"><img src="./icons/instagram2.svg" alt="Instagram" class="icon icon--small"></a>
-            <a href="https://t.me/Hi_i_sky" target = "_ blank"><img src="./icons/telegram2.svg" alt="Telegram" class="icon icon--small"></a>
+            <a href="https://www.instagram.com/hi_i_sky/" target="_ blank"><img src="./icons/instagram2.svg"
+                    alt="Instagram" class="icon icon--small"></a>
+            <a href="https://t.me/Hi_i_sky" target="_ blank"><img src="./icons/telegram2.svg" alt="Telegram"
+                    class="icon icon--small"></a>
         </div>
         <a href="#video-section" class="contacts__text contacts__text--small">Мои работы</a>
     </header>
     <main class="main-section main-section__background">
-        
-        <div class = "main-section__container main-section__container--small">
+
+        <div class="main-section__container main-section__container--small">
             <div class="main-section__text main-section__text--small">
                 ANASTASIIA
             </div>
             <div class="main-section__gif-container">
-                <img src="./images/icon_begin.gif" class="main-section__gif">
+                <img src="./images/icon_begin.gif" alt="logo" class="main-section__gif">
             </div>
             <div class="main-section__text main-section__text--small">
                 VIDEOMAKER
@@ -34,26 +40,36 @@
         </div>
     </main>
     <section id="video-section" class="video-section">
-        <div class = "video-section__container video-section__container--big video-section__container--medium video-section__container--small">
-            
-            <video class="video-section__video video-section__video--big video-section__video--medium video-section__video--align-start" poster="./images/preview-1.png" width="360" height="540" controls="controls" poster="video/duel.jpg">
-                <source src="./videos/hi_i_sky-0001.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-             </video>
-             <video class="video-section__video video-section__video--big video-section__video--medium video-section__video--align-end" poster="./images/preview-2.png" width="360" height="540" controls="controls" poster="video/duel.jpg">
-                <source src="./videos/hi_i_sky-0002.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-             </video>
-             <video class="video-section__video video-section__video--big video-section__video--medium video-section__video--align-start" poster="./images/preview-3.png" width="360" height="540" controls="controls" poster="video/duel.jpg">
-                <source src="./videos/hi_i_sky-0003.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-             </video>
-             <video class="video-section__video video-section__video--big video-section__video--medium video-section__video--align-end" poster="./images/preview-5.png" width="360" height="540" controls="controls" poster="video/duel.jpg">
-                <source src="./videos/hi_i_sky-0005.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <div
+            class="video-section__container video-section__container--big video-section__container--medium video-section__container--small">
+
+            <video
+                class="video-section__video video-section__video--big video-section__video--medium video-section__video--align-start"
+                poster="./images/preview-1.png" width="360" height="540" controls="controls">
+                <source src="./videos/hi_i_sky-0001.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             </video>
-            <video class="video-section__video video-section__video--big video-section__video--medium video-section__video--align-start" poster="./images/preview-4.png" width="360" height="540" controls="controls" poster="video/duel.jpg">
-                <source src="./videos/hi_i_sky-0004.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-             </video>
- 
-    
+            <video
+                class="video-section__video video-section__video--big video-section__video--medium video-section__video--align-end"
+                poster="./images/preview-2.png" width="360" height="540" controls="controls">
+                <source src="./videos/hi_i_sky-0002.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+            <video
+                class="video-section__video video-section__video--big video-section__video--medium video-section__video--align-start"
+                poster="./images/preview-3.png" width="360" height="540" controls="controls">
+                <source src="./videos/hi_i_sky-0003.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+            <video
+                class="video-section__video video-section__video--big video-section__video--medium video-section__video--align-end"
+                poster="./images/preview-5.png" width="360" height="540" controls="controls">
+                <source src="./videos/hi_i_sky-0005.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+            <video
+                class="video-section__video video-section__video--big video-section__video--medium video-section__video--align-start"
+                poster="./images/preview-4.png" width="360" height="540" controls="controls">
+                <source src="./videos/hi_i_sky-0004.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+        </div>
+    </section>
+
 
 </body>
-
- 
